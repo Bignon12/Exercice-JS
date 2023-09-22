@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleform.css">
+    <title>Mon formulaire</title>
+</head>
+
+<body>
+    <form action="http://bienvu.net/script.php" method="post" id="myform">
+        <legend><b>Vos Coordonnées</b></legend>
+        <p>*Ces zones sont obligatoires pour envoyer le formulaire</p><br>
+        <label for="Société">Société</label>
+        <input type="text" name="societe" id="soci">*<span id="soci2"></span><br>
+        <label for="ppc">Personne à contacter</label>
+        <input type="text" name="ppc" id="ppc">*
+        <span id="ppc2"></span><br>
+        <label for="adresse">Adresse de l'Entreprise</label>
+        <input type="text" name="adresse" id="adr"><br>
+        <label for="codepostal">Code Postal</label>
+        <input type="text" name="codepostal" id="codpost">*
+        <span id="codpost2"></span><br>
+        <label for="ville">Ville</label>
+        <input type="text" name="ville" id="vil">*
+        <span id="vil2"></span><br>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" , id="email">*
+        <span id="email2"></span><br>
+        <label for="tel">Télephone</label>
+        <input type="text" name="tel" id="tel"><br>
+        <label for="selection">Sélectionnez l'environnent technique du projet:</label>
+        <textarea id="label8" name="selection"></textarea><br>
+        <select id="choix" required>
+            <option value="" selected disabled>Choisissez</option>
+            <option value="access" id="acces">Access</option>
+            <option value="java" id="java">Java</option>
+            <option value="delphi" id="delphi">Delphi</option>
+            <option value="windev" id="windev">Windev</option>
+            <option value="visualbasic" id="vb">Visual Basic</option>
+            <option value="powerbuilder" id="pw">Power Builder</option>
+            <option value="internet" id="internet">Internet</option>
+            <option value="intranet" id="ingranet">Intranet</option>
+            <option value="windowsnt" id="wnt">Windows NT</option>
+            <option value="unix" id="unix">Unix</option>
+            <option value="sqlserveur" id="sql">SQL Server</option>
+            <option value="oracle" id="oracle">Oracle</option>
+            <option value="autres">Autres...</option>
+        </select>
+        <span id="choix2"></span>
+        <p><button type="submit" id="bouton">Envoyer</button>
+            <input type="reset" id="bouton1" value="Refuser"><br>
+    </form>
+    <span id="error"></span></form>
+    <script src="script12.js"></script>
+</body>
+
+</html>
